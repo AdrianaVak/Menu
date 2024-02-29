@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/menu.css">
+	<title>Blocks</title>
+</head>
+<body>
+	<header class="header-menu">
+		<div class="container">
+			<ul class="header-list">
+				<li>
+					<a href="menu.html">home</a>
+				</li>
+				<li>
+					<a href="#">gallery</a>
+				</li>
+				<li>
+					<a href="#">homeworks</a>
+					<ul class="header-second-list">
+						<li><a href="#">table</a></li>
+						<li><a href="#">float</a></li>
+						<li><a href="#">inline-block</a></li>
+						<li><a href="#">flex</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="outline flex bg-blue">
+			<!-- parent flex/float/inline-->
+			<div class="outline w-400 h-400">
+				400X400
+			</div>
+			<div class="outline w-800">
+				<div class="outline h-200">800X200</div>
+				<div class="outline flex">
+					<div class="outline w-400">400x200</div>
+					<div class="outline w-400">
+						<div class="outline h-100">400X100</div>
+						<div class="outline h-100">400X100</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="outline flex bg-violet">
+			<!-- parent flex/float/inline-->
+			<div class="outline w-400 h-400 float">
+				400X400
+			</div>
+			<div class="outline w-800">
+				<div class="outline h-200">800X200</div>
+				<div class="outline">
+					<div class="outline w-400 h-200">400x200</div>
+					<div class="outline w-400">
+						<div class="outline h-100">400X100</div>
+						<div class="outline h-100">400X100</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+		

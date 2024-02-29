@@ -1,0 +1,297 @@
+@import url("reset.css");
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../fonts/open-sans/OpenSansCondensed-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../fonts/open-sans/OpenSansCondensed-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/monserrat/Montserrat-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-menu {
+    font-family: 'Roboto';
+    font-weight: 400;
+    background: black;
+    padding: 20px 0;
+
+}
+
+.header-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.header-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    padding: 10px 20px;
+    background: rgb(201, 149, 235);
+    display: block;
+
+}
+
+.header-list li {
+    position: relative;
+}
+
+.header-list li:hover .header-second-list {
+    display: block;
+}
+
+.header-second-list {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 20px;
+
+}
+
+.header-second-list a {
+    background: rgb(113, 205, 77);
+}
+
+.header-third-list {
+    font-family: 'Open Sans Condensed';
+    font-weight: 500;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #f0f0f0;
+}
+
+.header-li-flex:hover .header-third-list {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.float {
+    float: left;
+}
+
+.fz-0 {
+    font-size: 0;
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+.w-400 {
+    width: 400px;
+}
+
+.w-800 {
+    width: 800px;
+}
+
+.h-100 {
+    height: 100px;
+}
+
+.h-133 {
+    height: 133.33px;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.h-400 {
+    height: 400px;
+}
+
+.outline {
+    outline: 2px solid red;
+}
+
+.bg-blue {
+    background: blue;
+}
+
+.bg-violet {
+    background: violet;
+}
+
+
+.table-data {
+    width: 100%;
+    margin: 40px 0 0;
+    border-style: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #e4e4ef;
+
+}
+
+
+.table-data,
+.table-data td,
+.table-data th {
+    border-top: 2px solid;
+    vertical-align: baseline;
+    border: 1px solid #e4e4ef;
+    border-collapse: collapse;
+}
+
+
+.table-data th {
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 18px 16px;
+    width: 400px;
+}
+
+.table-data th+th+th {
+    width: 160px;
+}
+
+.table-data th+th+th {
+    width: auto;
+}
+
+.table-data td {
+    padding: 8px 16px;
+    vertical-align: middle;
+}
+
+.table-data td p+p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #505050;
+}
+
+.last-item {
+    text-align: center;
+    width: 150px;
+}
+
+.page {
+    background: lightyellow;
+    font-family: monospace;
+}
+
+.btn-blue {
+    color: #605dec;
+    background: #ededfe;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 24px;
+}
+
+.btn-green {
+    color: green;
+    background: #ebf6eb;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 24px;
+}
+
+.btn-orange {
+    color: orange;
+    background: #fff4e4;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 24px;
+}
+
+.btn-red {
+    color: red;
+    background: #fff0f0;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 24px;
+}
+
+.btn-grey {
+    color: lightgrey;
+    background: #f8f9fb;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 24px;
+}
+
+.tcell {
+    text-align: center;
+}
